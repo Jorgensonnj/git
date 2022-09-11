@@ -1,0 +1,50 @@
+[init]
+  defaultBranch = main
+
+[core]
+  editor = nvim
+  pager = less
+
+[diff]
+  tool = nvim
+
+[color]
+  ui = auto
+
+[color "branch"]
+  current = green reverse
+  local = green
+  remote = yellow
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
+
+[color "status"]
+  added = green bold
+  changed = yellow bold
+  untracked = red bold
+
+[alias]
+  a = add --all
+  #############
+  b = branch
+  bd = branch -d
+  bdd = branch -D
+  #############
+  c = commit
+  cm = commit -m
+  #############
+  d = diff
+  #############
+  l = log --oneline
+  lg = log --oneline --graph --decorate
+  #############
+  s = status
+  #############
+  sl = stash list
+  sp = stash pop
+
